@@ -1,20 +1,62 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
+import {nextui} from "@nextui-org/react";
 
-const config: Config = {
+
+const config = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
+  prefix: "",
   theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-    },
+    extend :{},
   },
-  plugins: [],
-};
-export default config;
+  darkMode: "class",
+ 
+
+  plugins: [
+    nextui(),
+    
+  
+  ]
+} satisfies Config
+
+export default config
+
+
+
+
+
+// import type { Config } from "tailwindcss"
+// import {nextui} from "@nextui-org/react";
+
+// const config = {
+//   content: [
+//     './pages/**/*.{ts,tsx}',
+//     './components/**/*.{ts,tsx}',
+//     './app/**/*.{ts,tsx}',
+//     './src/**/*.{ts,tsx}',
+//     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
+//   ],
+//   prefix: "",
+//   theme: {
+//     extend :{},
+//   },
+//   darkMode: "class",
+
+//   plugins: [nextui()]
+// } satisfies Config
+
+// export default config
+
+
+
+
+
+
+
+
+
