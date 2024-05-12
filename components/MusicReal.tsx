@@ -37,7 +37,7 @@ export default function MusicReal() {
               <div className="flex flex-col gap-0">
                 <h3 className="font-semibold text-foreground/90">Dua Lipa</h3>
                 <p className="text-small text-foreground/80">Levitating</p>
-                <h1 className="text-large font-medium mt-2">Can't Star Now</h1>
+                <h1 className="text-large font-medium mt-2">Can&apos;t Star Now</h1>
               </div>
               <Button
                 isIconOnly
