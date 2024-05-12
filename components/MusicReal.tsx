@@ -47,7 +47,8 @@ export default function MusicReal() {
                 onPress={() => setLiked((v) => !v)}
               >
                 <HeartIcon
-                  className={liked ? "[&>path]:stroke-transparent" : ""}
+                  className={liked ? "stroke-transparent" : ""}
+
                   fill={liked ? "red" : "none"}
                 />
               </Button>
